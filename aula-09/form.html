@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- Formulários: input, action, submit  -->
+     <form action="#destino">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="texto">Texto:</label>
+                <input type="text" id="texto" name="texto" placeholder="Nome completo" required>
+            </div>
+            <div>
+                <label for="number">Número:</label>
+                <input type="number" id="number" name="number" min="0" max="10" step=".1">
+            </div>
+        </fieldset>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div>
+            <label for="date">Data:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div>
+            <label for="pwd">Senha:</label>
+            <input type="password" id="pwd" name="pwd">
+        </div>
+        <div>
+            <input type="checkbox" id="chk1" name="chk1">
+            <label for="chk1">Esporte</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chk2" name="chk2">
+            <label for="chk2">Cinema</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chk3" name="chk3">
+            <label for="chk3">Música</label>
+        </div>
+        <div>
+            <input type="radio" id="rdo1" name="rdo">
+            <label for="rdo1">Masculino</label>
+        </div>
+        <div>
+            <input type="radio" id="rdo2" name="rdo">
+            <label for="rdo2">Feminino</label>
+        </div>
+        <div>
+            <label>Color</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label>File</label>
+            <input type="file" name="file">
+        </div>
+        <div>
+            <label>ID:</label>
+            <input type="hidden" name="id" value="123">
+        </div>
+        <div>
+            <label>Slider:</label>
+            <input type="range" name="range" min="0" max="10">
+        </div>
+        <div>
+            <label for="">Mensagem</label><br>
+            <textarea name="tx_area" id=""> </textarea>
+        </div>
+        <div>
+            <label for="">Estados:</label>
+            <select name="estado" id="">
+                <option value="AL">Alagoas</option>    
+                <option value="BA">Bahia</option>    
+                <option value="SE">Sergipe</option>    
+            </select>
+        </div>
+        <div>
+            <label for="browser">Selecione seu navegador:</label>
+            <input list="teste" name="browser">
+            <datalist id="teste">
+                <option value="Chrome">Chrome</option>
+                <option value="Firefox">Firefox</option>
+                <option value="Safari">Safari</option>
+            </datalist>
+        </div>
+        <br><br><br><br><br><br><br><br><br><br>
+        <input type="submit" value="Texto do input">
+        <button type="submit"> Texto do botão </button>
+     </form>
+
+</body>
+</html>
