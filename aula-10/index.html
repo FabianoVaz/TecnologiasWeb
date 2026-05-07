@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Futebol Brasileiro </h1>
+        <p> Maiores Campeões</p>
+    </header>
+    <nav>
+        <h3> Menu Navegação</h3>
+        <ul>
+            <li> <a href="#local1"> Ranking</a></li>
+            <li> <a href="#local2"> Cadastrar</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <section>
+            <h2> Classificação </h2>
+            <p> Ranking </p>
+
+            <table border="1" cellpadding="10" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Posição</th>
+                        <td>Escudo</td>
+                        <td>Time</td>
+                        <td>Brasileiro</td>
+                        <td>Copa</td>
+                        <td>Total</td>
+                    </tr>
+                </thead>
+                <tbody align="center">
+                    <tr>
+                        <td> 1º </td>
+                        <td> <img src="img/maiorCampeao.png"> </td>
+                        <td> Palmeiras </td>
+                        <td> 12 </td>
+                        <td> 4 </td>
+                        <td> 16 </td>
+                    </tr>
+                    <tr>
+                        <td> 2º </td>
+                        <td> <img src="img/time2.png"> </td>
+                        <td> Flamengo </td>
+                        <td> 8* </td>
+                        <td> 5 </td>
+                        <td> 13 </td>
+                    </tr>
+                    <tr>
+                        <td> 3º </td>
+                        <td> <img src="img/time3.png" style="transform: rotate(180deg);"> </td>
+                        <td> Corinthians </td>
+                        <td> 7 </td>
+                        <td> 4 </td>
+                        <td> 11 </td>
+                    </tr>
+                    <tr>
+                        <td> 4º </td>
+                        <td> <img src="img/time4.png" style="transform: rotate(180deg);"> </td>
+                        <td> Cruzeiro </td>
+                        <td> 4 </td>
+                        <td> 6 </td>
+                        <td> 10 </td>
+                    </tr>
+                </tbody>
+                <tfoot align="center">
+                    <tr>
+                        <td colspan="6"> *87 é do Sport</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <h2> Cadastro</h2>
+            <p>Preencha os dados</p>
+            
+            <form action="" method="" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <p>
+                        <label for="igual">Nome</label> <br>
+                        <input type="text" name="nome_box" id="igual" size="50">
+                    </p>
+                    <p>
+                        <label for="igual1">Email</label> <br>
+                        <input type="email" name="mail_box" id="igual1">
+                    </p>
+                    <p>
+                        <label for="igual2">Senha</label> <br>
+                        <input type="password" name="senha_box" id="igual2">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend> Características </legend>
+
+                    <p>
+                        <strong>Pé dominante:</strong> <br>
+                        <input type="radio" name="pe" id="x1" value="destro"> <label for="x1">Destro</label> <br>
+                        <input type="radio" name="pe" id="x2" value="canhoto"> <label for="x2">Canhoto</label> <br>
+                        <input type="radio" name="pe" id="x3" value="ambi"> <label for="x3">Ambidestro</label>
+                    </p>
+
+                    <p>
+                        <strong>Pé dominante:</strong> <br>
+                        <input type="checkbox" name="falta" id="x4"> <label for="x4">Falta</label> <br>
+                        <input type="checkbox" name="penalti" id="x5"> <label for="x5">Penalti</label> <br>
+                        <input type="checkbox" name="capitao" id="x6"> <label for="x6">Capitão</label> <br>
+                        <input type="checkbox" name="selecao" id="x7"> <label for="x7">Seleção</label> <br>
+                    </p>
+
+                    <input type="file" accept=".png">
+
+                </fieldset>
+
+                <input type="submit" value="Enviar">
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div align="text"> 
+            <h3>
+                Ciência da Computação - IFBA
+            </h3>
+        </div>
+    </footer>
+    <br><br><br><br><br><br><br><br><br><br>
+</body>
+</html>
