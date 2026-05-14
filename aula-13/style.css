@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+
+header{
+    height: 20vh;
+    background-color: blueviolet;
+}
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;    /* Horizontal */
+    align-items: center;        /* Vertical */
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 350px;
+    min-width: 200px;
+    max-width: 250px;
+    border: 1px solid lightslategray;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card img{
+    width: 100%;
+}
+
+footer{
+    height: 10vh;
+    background-color: cadetblue;
+}

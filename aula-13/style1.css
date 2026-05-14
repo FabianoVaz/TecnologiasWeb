@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: antiquewhite;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    height: 100vh;
+    gap: 20px;
+}
+
+.card{
+    height: 350px;
+    min-width: 200px;
+    max-width: 250px;
+    border: 1px solid lightslategray;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
