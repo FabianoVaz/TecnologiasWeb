@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    Num 1: <input type="text" name="n1" id="n1"> <br>
+    Num 2: <input type="text" name="n2" id="n2"> <br>
+    
+    <button id="btn"> Somar </button>
+    
+    <div id="result"> 00 </div>
+
+    <script>
+        document.querySelector("#btn").addEventListener("click", somar);
+
+        function somar(){
+            const num1 = document.querySelector("#n1");
+            const num2 = document.querySelector("#n2");
+            const result = document.querySelector("#result");
+
+            result.innerHTML = parseInt(num1.value) + parseInt(num2.value);
+        }
+    </script>
+
+</body>
+</html>

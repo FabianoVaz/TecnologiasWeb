@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="miolo" class="container">
+        <!-- <div class="card">1</div> -->
+    </div>
+
+    <script>
+        // Get
+        /* const element1 = document.getElementById("miolo");
+        const element2 = document.getElementsByClassName("container")[1]; */
+
+        // Query
+        /* const element3 = document.querySelector(".card:nth-child(2)");
+        const element4 = document.querySelectorAll(".card")[1]; */
+
+        /* const alunos = ["joão", "maria", "josé", "antonio", "claudia"]
+
+        const miolo = document.querySelector("#miolo");
+
+        alunos.map( item => miolo.innerHTML += `<div class="card">${item}</div>`) */
+
+        let aluno = {
+            nome:"Eduardo", 
+            turma:"2º", 
+            curso:"BCC"
+        }
+
+        let aluno2 = {
+            nome:"Arthur", 
+            turma:"2º", 
+            curso:"BCC"
+        }
+
+        let turma = [aluno, aluno2]
+
+        const miolo = document.querySelector("#miolo");
+        turma.forEach( a => {miolo.innerHTML += `<div class="card">${a.nome}</div>`} )
+
+    </script>
+</body>
+</html>
