@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle{
+            width: 150px;
+            height: 150px;
+            background-color: cadetblue;
+            border-radius: 75px;
+            /* transform: translateX(600px) translateY(300px); */
+        }
+    </style>
+</head>
+<body>
+    
+    <input type="text" id="box_txt">
+
+    <div id="circle" class="circle"></div>
+
+    <script>
+        /*
+        https://www.w3schools.com/jsref/dom_obj_event.asp
+        click
+        mouseenter
+        mouseleave
+        mouseup
+        mousedown
+        mousemove
+        wheel
+        focus
+        keypress
+        keyup
+        keydown
+        */
+        cont = 0;
+        const circle = document.querySelector("#circle");
+        const input = document.querySelector("#box_txt");
+
+        input.addEventListener('keyup', 
+        (event) => {
+            let pos = circle.getBoundingClientRect();
+            switch(event.code){
+                case 'ArrowRight': circle.style.transform = `translateX(${pos.left+50}px)`; break;
+                case 'ArrowLeft': circle.style.transform = `translateX(${pos.left-50}px)`; break;
+                default: return;
+            }
+            }
+        )
+        circle.addEventListener('click', () => {teste()});
+        function teste(){
+            circle.style.backgroundColor = 'red';
+        }
+    </script>
+</body>
+</html>
