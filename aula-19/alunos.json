@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "nome": "Ana Silva",
+        "turma": "1º Ano",
+        "cr": 8.5
+    },
+    {
+        "id": 2,
+        "nome": "João Santos",
+        "turma": "2º Ano",
+        "cr": 7.8
+    },
+    {
+        "id": 3,
+        "nome": "Maria Souza",
+        "turma": "3º Ano",
+        "cr": 9.2
+    },
+    {
+        "id": 4,
+        "nome": "José Souza",
+        "turma": "4º Ano",
+        "cr": 7.5
+    }
+]

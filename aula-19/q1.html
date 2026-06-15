@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q1</title>
+    <link rel="stylesheet" href="q1.css">
+</head>
+<body>
+    <button id="btn-add"> Add </button>
+
+    <section id="container-cards" class="container-cards">
+    </section>
+
+    <script>
+        document.querySelector('#btn-add').addEventListener('click', q1 );
+
+        let count = 1;
+        function q1(){
+            const miolo = document.querySelector('#container-cards');
+            miolo.innerHTML += `<div class="card" data-id="${count}"> Card ${count++}</div>`;
+        }
+    </script>
+</body>
+</html>

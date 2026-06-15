@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q2</title>
+    <link rel="stylesheet" href="q1.css">
+</head>
+<body>
+    <button id="btn-add"> Load </button>
+
+    <section id="container-cards" class="container-cards">
+
+    </section>
+
+    <script>
+        document.querySelector('#btn-add').addEventListener('click', q2 );
+
+        function q2(){
+            const miolo = document.querySelector('#container-cards');
+            fetch('alunos.json')
+            .then( response => response.json())
+            .then( alunos => alunos.forEach( 
+                aluno => miolo.innerHTML += `<div class="card" data-id="${aluno.id}"> ${aluno.nome} </div>`))
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q3</title>
+    <link rel="stylesheet" href="q3.css">
+</head>
+<body class="login-body">
+    
+    <form class="login-card" onsubmit="logar(event)" id="teste">
+        <h1> Bem-vindo</h1>
+        
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="admin" required>
+        
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" placeholder="admin" required>
+        
+        <button type="submit">Entrar</button>
+
+        <a href="#"> Esqueci minha senha </a>
+        <p> Não tem uma conta? <a href="q2.html">Cadastre-se</a></p>
+    </form>
+
+    <script>
+        function logar(event){
+            event.preventDefault();
+
+            const email = document.querySelector('#email').value;
+            const senha = document.querySelector('#senha').value;
+
+            if( email === "admin" && senha === "admin"){
+                sessionStorage.setItem('token', 'jwt123');
+                alert("Login realizado com sucesso!");
+                window.location.href = "q2.html";
+            } else {
+                alert("Email ou senha incorretos. Tente novamente.");
+            }
+        }
+    </script>
+</body>
+</html>
